@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+
+        }
+        .mario{
+            width: 100%;
+            height: 100vh;
+            background-image: url("cvv.png");
+            background-size: 100% 100%; 
+        }
+        img{
+            position: absolute;
+            bottom: 200px;
+            animation-name: mario ;
+            animation-duration: 6s;
+            animation-iteration-count:infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes mario{
+            0%{left:0%}
+            100%{left:88%}
+        }
+        h2{
+            color: azure;
+            font-size: 7em;
+            position: absolute;
+            top:15%;
+            left: 44%;
+            animation-name: texth2 ;
+            animation-duration: 3s;
+            animation-iteration-count:infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes texth2{
+            0%{font-size: 7em;}
+            100%{font-size: 10em;}
+        }
+    </style>
+</head>
+<body>
+    <div class="mario">
+        <div class="runing">
+            <img src="output-onlinegiftools.gif" alt="ruing" width="500px" >
+            <h2 class="text">Run Run</h2>
+        </div>
+    </div>
+</body>
+</html>
